@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+httpx
+oauthlib
+python-dotenv
+SQLAlchemy
+caldav
+msal
+

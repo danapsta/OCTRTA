@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  calendar-sync:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app:cached
+    environment:
+      - GOOGLE_CLIENT_ID=your-google-client-id
+      - GOOGLE_CLIENT_SECRET=your-google-client-secret
+      - OUTLOOK_CLIENT_ID=your-outlook-client-id
+      - OUTLOOK_CLIENT_SECRET=your-outlook-client-secret
+      - APP_ENV=development
